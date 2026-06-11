@@ -1,6 +1,7 @@
 :root{
-  --paper:#FAF9F6; --ink:#111110; --soft:#46443E; --mut:#8E8B83;
+  --paper:#FAF9F6; --ink:#111110; --soft:#46443E; --mut:#6F6C64;
   --line:#DBD8CF; --rule:#111110; --maxw:1320px; --pad:48px;
+  /* --mut darkened from #8E8B83 to meet WCAG AA (4.5:1) contrast on --paper; still a muted warm gray */
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -128,8 +129,8 @@ details .ans{padding:0 0 24px 88px;font-size:1rem;color:var(--soft);line-height:
 footer{border-top:1px solid var(--rule);padding-top:42px}
 .fcols{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding-bottom:54px}
 .fcol{font-size:.82rem;line-height:1.7}
-.fcol h5{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
-.fcol a{color:var(--soft);cursor:pointer;overflow-wrap:anywhere}
+.fcol .fh{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
+.fcol a{color:var(--soft);cursor:pointer;overflow-wrap:anywhere;display:inline-block;padding:3px 0}
 .fcol a:hover{color:var(--ink)}
 .fc1{grid-column:1 / span 4}.fc2{grid-column:5 / span 3}.fc3{grid-column:8 / span 2}.fc4{grid-column:10 / span 3}
 @media(max-width:680px){.fc1,.fc2,.fc3,.fc4{grid-column:span 6}}
