@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Journal — Writing on brand, design & spending wisely | The Creative Audit</title>
+<meta name="description" content="Essays on brand strategy, design briefs, and what branding actually costs in India — practical reading from The Creative Audit.">
+<link rel="canonical" href="https://thecreativeaudit.com/journal.html">
+<meta name="theme-color" content="#FAF9F6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Creative Audit">
+<meta property="og:title" content="The Journal — The Creative Audit">
+<meta property="og:description" content="Essays on brand strategy, design briefs, and what branding actually costs in India — practical reading from The Creative Audit.">
+<meta property="og:url" content="https://thecreativeaudit.com/journal.html">
+<meta name="twitter:card" content="summary">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html">The Creative Audit</a>
+    <nav class="nav-r">
+      <a class="x" href="index.html#what">What you get</a>
+      <a class="x" href="index.html#decision">Pricing</a>
+      <a class="x" href="journal.html">Journal</a>
+      <a class="x" href="index.html#faq">FAQ</a>
+      <a class="req" href="index.html#apply"><span>Request an audit</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="view-journal">
+  <section class="post">
+    <div class="wrap">
+      <a class="backlink" href="index.html">&larr; Back</a>
+      <div class="post-kick" style="margin-top:30px">The Journal</div>
+      <h1 style="max-width:24ch">Writing on brand, design, and spending wisely.</h1>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <a class="jrow" href="journal/how-to-write-a-design-brief.html"><span class="jn num">01</span><span><span class="jt">How to write a design brief that gets you what you actually wanted</span><span class="jd">The six questions every good designer will ask — and a one-page skeleton you can copy today.</span><span class="jc">Briefing</span></span><span class="go">Read &rarr;</span></a>
+      <a class="jrow" href="journal/how-much-does-branding-cost-india.html"><span class="jn num">02</span><span><span class="jt">How much does branding cost in India?</span><span class="jd">Why the number ranges so wildly — and how to control which end you land on.</span><span class="jc">Cost</span></span><span class="go">Read &rarr;</span></a>
+      <a class="jrow" href="journal/how-much-should-a-logo-cost.html"><span class="jn num">03</span><span><span class="jt">How much should a logo cost — and why it's the wrong question</span><span class="jd">The same logo can cost ₹2,000 or ₹5 lakh. What you're really paying for.</span><span class="jc">Cost</span></span><span class="go">Read &rarr;</span></a>
+      <a class="jrow" href="journal/rebrand-or-refresh.html"><span class="jn num">04</span><span><span class="jt">Rebrand or refresh: how to tell which one you actually need</span><span class="jd">They solve different problems and cost wildly different amounts. How to diagnose yours.</span><span class="jc">Strategy</span></span><span class="go">Read &rarr;</span></a>
+      <a class="jrow" href="journal/why-your-design-project-missed.html"><span class="jn num">05</span><span><span class="jt">Why your last design project missed — and it probably wasn't the designer</span><span class="jd">The failure almost always happens in the same invisible place. Here's where.</span><span class="jc">Process</span></span><span class="go">Read &rarr;</span></a>
+      <a class="jrow" href="journal/what-is-a-creative-audit.html"><span class="jn num">06</span><span><span class="jt">What is a creative audit (and how to know if you need one)?</span><span class="jd">It sounds like accounting. Here's what it actually is, and the signs you're ready.</span><span class="jc">Guide</span></span><span class="go">Read &rarr;</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div class="fcol fc1"><h5>The Creative Audit</h5>Clarity before creativity. A two-week brand diagnosis, delivered as one presentation.</div>
+      <div class="fcol fc2"><h5>Contact</h5><a href="mailto:hello@thecreativeaudit.com">hello@thecreativeaudit.com</a></div>
+      <div class="fcol fc3"><h5>Index</h5><a href="index.html#what">What you get</a><br><a href="index.html#decision">Pricing</a><br><a href="journal.html">Journal</a><br><a href="index.html#faq">FAQ</a></div>
+      <div class="fcol fc4"><h5>Location</h5>Bengaluru, India<br><span class="num">© 2026</span></div>
+    </div>
+    <div class="wordmark tight">The Creative&nbsp;<span class="om">Audit</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.rv');
+  function showAll(){ for (var i=0;i<els.length;i++){ els[i].classList.add('in'); } }
+  if (!('IntersectionObserver' in window)) { showAll(); return; }
+  try {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -4% 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  } catch (err) { showAll(); }
+})();
+</script>
+</body>
+</html>
