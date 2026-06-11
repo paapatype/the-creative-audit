@@ -184,8 +184,8 @@ footer .wrap{container-type:inline-size}
 .xmark{width:30px;height:30px;color:var(--mut);flex:none}
 @media(max-width:680px){.lens{width:62px;height:62px}}
 /* indexed section header */
-.ehead{display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:end;border-top:1px solid var(--rule);padding-top:18px;margin-bottom:32px}
-.ehead .bignum{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:600;letter-spacing:-.05em;line-height:.76;color:var(--ink)}
+.ehead{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:end;border-top:1px solid var(--rule);padding-top:16px;margin-bottom:30px}
+.ehead .bignum{font-size:clamp(1.6rem,3.2vw,2.4rem);font-weight:600;letter-spacing:-.04em;line-height:.85;color:var(--ink)}
 .ehead .lab{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding-bottom:8px}
 .ehead .lab small{display:block;color:var(--mut);font-weight:500;letter-spacing:.05em;margin-top:8px;text-transform:none;font-size:.94rem;line-height:1.45}
 @media(max-width:680px){.ehead{grid-template-columns:auto 1fr;gap:18px}.ehead .xmark{display:none}}
