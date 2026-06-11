@@ -127,6 +127,7 @@ details .ans{padding:0 0 24px 88px;font-size:1rem;color:var(--soft);line-height:
 
 /* FOOTER (fixed columns) */
 footer{border-top:1px solid var(--rule);padding-top:42px}
+footer .wrap{container-type:inline-size}
 .fcols{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding-bottom:54px}
 .fcol{font-size:.82rem;line-height:1.7}
 .fcol .fh{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
@@ -134,7 +135,8 @@ footer{border-top:1px solid var(--rule);padding-top:42px}
 .fcol a:hover{color:var(--ink)}
 .fc1{grid-column:1 / span 4}.fc2{grid-column:5 / span 3}.fc3{grid-column:8 / span 2}.fc4{grid-column:10 / span 3}
 @media(max-width:680px){.fc1,.fc2,.fc3,.fc4{grid-column:span 6}}
-.wordmark{font-weight:600;letter-spacing:-.045em;line-height:.8;font-size:clamp(2.6rem,15.5vw,12rem);white-space:nowrap;border-top:1px solid var(--line);padding:24px 0 18px;overflow:hidden}
+/* Sized in cqw so the full wordmark fits the footer content width edge-to-edge at any width (no clipping). clamp() is the fallback for browsers without container-query units. */
+.wordmark{font-weight:600;letter-spacing:-.045em;line-height:.86;white-space:nowrap;border-top:1px solid var(--line);padding:26px 0 20px;overflow:hidden;font-size:clamp(2.1rem,11vw,9rem);font-size:11.8cqw}
 .wordmark .om{color:var(--mut)}
 
 /* ARTICLE / JOURNAL views */
